@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int k, l, m, n, d, c = 0, kk, ll, mm, nn;
+    cin >> k >> l >> m >> n >> d;
+    kk = k;
+    ll = l;
+    mm = m;
+    nn = n;
+    
+    for (int i = 1; i <= d; i++)
+    {
+        if (i == k || i == l || i == m || i == n)
+        {
+            c++;
+        }
+        if (i == k) k += kk;
+        if (i == l) l += ll;
+        if (i == m) m += mm;
+        if (i == n) n += nn;
+    }
+    cout << c;
+    system("pause");
+}
